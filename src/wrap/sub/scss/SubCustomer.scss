@@ -1,0 +1,840 @@
+#sub-customer {
+    width: 100%;
+    padding: 70px 0 100px 0;
+    .container {
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+        .title {
+            h2 {
+                font-size: 25px;
+                font-weight: 700;
+            }
+        }
+        .content {
+            width: 100%;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            .left {
+                width: 220px;
+                .left-list {
+                    width: 100%;
+                    border: 1px solid #e6e6e6;
+                    ul {
+                        width: 100%;
+                        padding: 10px 0;
+                        li {
+                            padding: 15px 25px;
+                            cursor: pointer;
+                            &:hover {
+                                background: #ddd;
+                            }
+                            a {
+                                color: #000;
+                                font-size: 15px;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+                .guide-box {
+                    width: 100%;
+                    margin-top: 15px;
+                    padding: 30px 25px;
+                    border: 1px solid #e6e6e6;
+                    .tel-box {
+                        width: 100%;
+                        display: flex;
+                        flex-flow: row wrap;
+                        h3 {
+                            margin: 0 0 8px 0;
+                            color: #333;
+                            font-size: 15px;
+                            font-weight: 500;
+                        }
+                        strong {
+                            margin: 0 0 5px 0;
+                            color: #333;
+                            font-size: 22px;
+                            font-weight: 700;
+                        }
+                        span {
+                            color: #666;
+                            font-size: 14px;
+                            line-height: 20px;
+                        }
+                    }
+                    .counsel-box {
+                        width: 100%;
+                        margin-top: 60px;
+                        display: flex;
+                        flex-flow: row wrap;
+                        h3 {
+                            margin: 0 0 8px 0;
+                            color: #333;
+                            font-size: 15px;
+                            font-weight: 500;
+                        }
+                        span {
+                            color: #666;
+                            font-size: 14px;
+                            line-height: 20px;
+                        }
+                    }
+                }
+            }
+            .right {
+                width: 820px;
+                .search-box {
+                    width: 100%;
+                    background: #f8f8f8;
+                    padding: 27px 60px;
+                    h3 {
+                        margin-bottom: 15px;
+                        font-size: 24px;
+                        font-weight: 500;
+                        color: #333;
+                        text-align: center;
+                    }
+                    .input-gap {
+                        margin-bottom: 10px;
+                        width: 100%;
+                        background: #fff;
+                        .input-box {
+                            position: relative;
+                            width: 100%;
+                            height: 40px;
+                            display: flex;
+                            justify-content: space-between;
+                            input{
+                                width: 100%;
+                                height: 44px;
+                                padding: 3px 15px;
+                                background: #fff;
+                                border: 1px solid #ccc;
+                                font-size: 13px;
+                                font-family: 'Pretendard';
+                                color: #333;
+                                outline: 1px solid transparent;
+                            }
+                            .search-btn {
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                height: 100%;
+                                margin-top: 2px;
+                                padding: 0 10px;
+                                border: 0;
+                                background: transparent;
+                                cursor: pointer;
+                                .search-icon {
+                                    display: inline-block;
+                                    width: 18px;
+                                    height: 18px;
+                                    background: url(../../../../public/images/sub/sub-customer/ico_btns.png) no-repeat 0 0;
+                                }
+                            }
+                        }
+                    }
+                    ul {
+                        display: flex;
+                        li {
+                            button {
+                                border: 0;
+                                color: #666;
+                                font-size: 13px;
+                                font-family: 'Pretendard';
+                            }
+                            i {
+                                display: inline-block;
+                                margin: 0 10px;
+                                color: #ccc;
+                                transform: translateY(3px);
+                            }
+                        }
+                    }
+                }
+                // 랭킹닭컴 이용안내
+                .use-guide {
+                    margin-top: 80px;
+                    .guide-title {
+                        font-size: 24px;
+                        font-weight: 500;
+                    }
+                    ul {
+                        margin-top: 40px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        li {
+                            width: 20%;
+                            text-align: center;
+                            a {
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                                i {
+                                    display: inline-block;
+                                    width: 48px;
+                                    height: 40px;
+                                    background: url(../../../../public/images/sub/sub-customer/icon_cscenter.png) no-repeat 0 0;
+                                    &.icon-use-guide1 {
+                                        background-position: 0 0;
+                                    }
+                                    &.icon-use-guide2 {
+                                        background-position: -70px 0;
+                                    }
+                                    &.icon-use-guide3 {
+                                        background-position: -140px 0;
+                                    }
+                                    &.icon-use-guide4 {
+                                        background-position: -210px 0;
+                                    }
+                                    &.icon-use-guide5 {
+                                        background-position: -280px 0;
+                                    }
+                                }
+                                span {
+                                    display: block;
+                                    line-height: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+                // 자주하는 질문
+                .faq {
+                    &.faq-top5 {
+                        margin-top: 80px;
+                    }
+                    .faq-header {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        .faq-title {
+                            font-size: 24px;
+                            font-weight: 500;
+                        }
+                        .go-faq {
+                            span {
+                                font-size: 13px;
+                            }
+                            i {
+                                margin: 0 0 0 5px;
+                                font-size: 17px;
+                                transform: translateY(-1px);
+                            }
+                        }
+                    }
+                    .faq-box {
+                        margin-top: 10px;
+                        padding: 25px 60px;
+                        .input-box {
+                            width: 100%;
+                            height: 45px;
+                            display: flex;
+                            border: 1px solid #ccc;
+                            border-radius: 3px;
+                            input {
+                                &::placeholder {
+                                    color: #bbb;
+                                    font-size: 12px;
+                                    font-weight: 500;
+                                }
+                                width: 100%;
+                                height: 100%;
+                                padding: 3px 15px;
+                                border: 0;
+                                color: #333;
+                                font-size: 14px;
+                                outline: 0;
+                            }
+                            .search-btn {
+                                height: 100%;
+                                padding: 0 10px;
+                                background: transparent;
+                                border: 0;
+                                cursor: pointer;
+                                .search-icon {
+                                    display: inline-block;
+                                    width: 18px;
+                                    height: 18px;
+                                    background: url(../../../../public/images/sub/sub-customer/ico_btns.png) no-repeat 0 0;
+                                }
+                            }
+                        }
+                        ul.category-box {
+                            width: 100%;
+                            margin-top: 20px;
+                            gap: 8px;
+                            display: flex;
+                            flex-flow: row wrap;
+                            li.category {
+                                min-width: 100px;
+                                height: 40px;
+                                cursor: pointer;
+                                button {
+                                    width: 100%;
+                                    height: 100%;
+                                    margin-right: 5px;
+                                    padding: 0 10px;
+                                    background: #fff;
+                                    border: 1px solid #ccc;
+                                    border-radius: 100px;
+                                    cursor: pointer;
+                                    span {
+                                        color: #333;
+                                        font-size: 14px;
+                                        font-family: 'Pretendard';
+                                    }
+                                }
+                                &.on {
+                                    button {
+                                        background-color: #333;
+                                        span {
+                                            color: #fff;
+                                            font-weight: 600;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    ul.faq-list {
+                        border-top: 1px solid #333;
+                        border-bottom: 1px solid #bbb;
+                        margin-top: 40px;
+                        &.top5 {
+                            margin-top: 10px;
+                        }
+                        li {
+                            border-bottom: 1px solid #eee;
+                            cursor: pointer;
+                            a {
+                                position: relative;
+                                display: block;
+                                padding: 15px 10px;
+                                display: flex;
+                                .category {
+                                    width: 120px;
+                                }
+                                .subject {
+                                    display: flex;
+                                    span {
+                                        margin-right: 10px;
+                                        color: #fb5001;
+                                    }
+                                    p {
+                                        font-size: 15px;
+                                    }
+                                }
+                                .faq-icon {
+                                    position: absolute;
+                                    top: 7px;
+                                    right: 10px;
+                                    i {
+                                        color: #999;
+                                        font-size: 25px;
+                                        transform: translateY(3px);
+                                    }
+                                }
+                            }
+                            .faq-answer {
+                                padding: 30px;
+                                background: #f8f8f8;
+                                p {
+                                    padding: 0 20px 0 120px;
+                                    color: #666;
+                                    font-size: 14px;
+                                    line-height: 25px;
+                                    &.answer-txt {
+                                        padding: 0;
+                                    }
+                                    strong {
+                                        font-weight: 600;
+                                        vertical-align: top;
+                                        &.orange {
+                                            color: #f05623;
+                                        }
+                                    }
+                                    em {
+                                        text-decoration: underline;
+                                        vertical-align: top;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                .gap-box {
+                    margin-top: 80px;
+                    width: 100%;
+                    display: flex;
+                    .notice-preview {
+                        width: 50%;
+                        .preview-header {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            h3 {
+                                color: #333;
+                                font-size: 24px;
+                                font-weight: 500;
+                            }
+                            .notice-nav {
+                                span {
+                                    color: #333;
+                                    font-size: 13px;
+                                }
+                                i {
+                                    margin-left: 5px;
+                                    font-size: 17px;
+                                    transform: translateY(-0.5px);
+                                }
+                            }
+                        }
+                        ul {
+                            height: 100%;
+                            max-height: calc(51px * 5);
+                            overflow: hidden;
+                            margin: 10px 0 0 0;
+                            border-top: 1px solid #333;
+                            li {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                padding: 15px 10px;
+                                border-bottom: 1px solid #ddd;
+                                line-height: 19px;
+                                .preview-left {
+                                    a {
+                                        color: #333;
+                                        font-size: 14px;
+                                    }
+                                }
+                                .preview-right {
+                                    span {
+                                        color: #666;
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .customer-box {
+                        width: 50%;
+                        padding: 0 15px;
+                        .customer-gap {
+                            margin-top: 35px;
+                            padding: 35px 30px;
+                            background: #f8f8f8;
+                            border-radius: 5px;
+                            ul.customer-info {
+                                display: flex;
+                                text-align: center;
+                                justify-content: center;
+                                align-items: center;
+                                li.info-list {
+                                    width: 30%;
+                                    a {
+                                        display: block;
+                                        .info-icon {
+                                            display: inline-block;
+                                            width: 35px;
+                                            height: 35px;
+                                            background: url(../../../../public/images/sub/sub-customer/icon_cscenter.png);
+                                            &.icon1 {
+                                                background-position: 0 -50px;
+                                            }
+                                            &.icon2 {
+                                                background-position: -70px -50px;
+                                            }
+                                            &.icon3 {
+                                                background-position: -140px -50px;
+                                            }
+                                            
+                                        }
+                                        span {
+                                            display: block;
+                                            color: #333;
+                                            font-size: 14px;
+                                        }
+                                    }
+                                }
+                                em {
+                                    color: #ddd;
+                                    font-size: 20px;
+                                }
+                            }
+                            .tel-box {
+                                width: 100%;
+                                margin-top: 30px;
+                                padding: 20px 0;
+                                background: #fff;
+                                text-align: center;
+                                strong {
+                                    font-size: 24px;
+                                    font-weight: 700;
+                                }
+                                ul.business-hours {
+                                    margin-top: 15px;
+                                    display: inline-flex;
+                                    li {
+                                        color: #666;
+                                        font-size: 14px;
+                                        &:nth-child(2){
+                                            color: #999;
+                                        }
+                                    }
+                                    > em {
+                                        color: #ddd;
+                                        padding: 0 10px;
+                                    }
+                                }
+                                p {
+                                    color: #666;
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                // 공지사항
+                .notice {
+                    .notice-header {
+                        display: flex;
+                        justify-content: space-between;
+                        h3 {
+                            color: #333;
+                            font-size: 24px;
+                            font-weight: 500;
+                        }
+                    }
+                    ul.list-data {
+                        width: 100%;
+                        margin-top: 10px;
+                        border-top: 1px solid #333;
+                        > li {
+                            width: 100%;
+                            padding: 15px 20px;
+                            border-bottom: 1px solid #ddd;
+                            ul {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                li.col {
+                                    text-align: center;
+                                    span {
+                                        color: #333;
+                                        font-size: 14px;
+                                    }
+                                    &.col1 {
+                                        width: 50px;
+                                        span {
+                                            color: #999;
+                                            i {
+                                                display: inline-block;
+                                                width: 18px;
+                                                height: 14px;
+                                                background: url(../../../../public/images/sub/sub-customer/ico_bullet.png) no-repeat 0 0;
+                                            }
+                                        }
+                                    }
+                                    &.col2 {
+                                        width: 570px; 
+                                        text-align: left;
+                                    }
+                                    &.col3 {
+                                        width: 100px;
+                                        span {
+                                            color: #999;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .button-box {
+                        margin-top: 25px;
+                        text-align: end;
+                        button {
+                            width: 125px;
+                            height: 50px;
+                            background: #fb5001;
+                            border: 1px solid #fb5001;
+                            border-radius: 3px;
+                            color: #fff;
+                            font-size: 14px;
+                            font-weight: 600;
+                            cursor: pointer;
+                        }
+                    }
+                    // 글쓰기
+                    .notice-list {
+                        width:100%;
+                        margin-top: 10px;                      
+                        border-top: 1px solid #333;      
+                        form {
+                            width:100%;
+                            .form {
+                                width:100%;
+                                ul {
+                                    width:100%;
+                                    padding: 8px 20px;
+                                    li {
+                                        width:100%;
+                                        padding: 8px 0;
+                                        .gap {
+                                            width: 100%;
+                                            // height: 44px;
+                                            padding: 0 0 0 140px;
+                                            position: relative;
+                                            // 레이블
+                                            .left-label {
+                                                position: absolute;
+                                                left:0;
+                                                top:0;
+                                                height: 44px;
+                                                display: flex;
+                                                align-items: center;        
+                                                font-size: 14px;
+                                                color: #333;  
+                                                font-weight: 500;
+                                                i {
+                                                    color: #fb5001;
+                                                }
+                                            }
+                                            // 게시 & 공지
+                                            select {
+                                                position: relative;
+                                                width: 250px;
+                                                height: 44px;
+                                                border: 1px solid #ddd;
+                                                background: transparent;
+                                                border-radius: 3px;
+                                                font-size: 16px;
+                                                color:#666;
+                                                padding: 0 15px;
+                                                outline-offset: -1px;
+                                                outline: 1px solid transparent;
+                                                transition: all 0.3s;
+                                                appearance: none;
+                                                &:focus{
+                                                    outline-color: #777;
+                                                }
+                                                
+                                            }
+                                            .icon-arrow-down {
+                                                position: absolute;
+                                                top: 0;
+                                                left: 355px;
+                                                width: 30px;
+                                                height: 20px;
+                                                background: url(../../../../public/images/sub/sub-customer/icon_arrow_right_off.svg) no-repeat 100% 50%;
+                                                transform: rotate(90deg);
+                                                // transition: transform 0.3s;
+                                                &.on{
+                                                    transform: rotate(270deg);
+                                                    height: 63px;
+                                                }
+                                            }
+
+                                            // 작성자 & 아이디
+                                            div {
+                                                width: 250px;
+                                                height: 44px;
+                                                border: 1px solid #ddd;
+                                                background: #fff;
+                                                border-radius: 3px;
+                                                font-size: 16px;
+                                                color:#666;
+                                                display: flex;
+                                                align-items: center;
+                                                padding: 0 15px;
+                                            }
+
+                                            // 제목
+                                            input[type='text']{
+                                                width: 100%;
+                                                height: 44px;
+                                                border: 1px solid #ddd;
+                                                background: #fff;
+                                                border-radius: 3px;
+                                                font-size: 16px;
+                                                color:#666;
+                                                padding: 0 15px;
+                                                outline-offset: -1px;
+                                                outline: 1px solid transparent;
+                                                transition: all 0.3s;
+                                                &:focus{
+                                                    outline-color: #777;
+                                                }
+                                            }
+
+                                            // 내용
+                                            textarea {
+                                                width: 100%;
+                                                height: 500px;
+                                                border: 1px solid #ddd;
+                                                background: #fff;
+                                                border-radius: 3px;
+                                                font-size: 16px;
+                                                color:#666;
+                                                padding: 15px;
+                                                outline-offset: -1px;
+                                                outline: 1px solid transparent;
+                                                transition: all 0.3s;
+                                                // overflow-y: auto;
+                                                resize: none;
+                                                &:focus{
+                                                    outline-color: #777;
+                                                }
+                                            }
+
+                                        }
+                                    }
+                                }
+                            }
+
+                            .button-box {
+                                width:100%;
+                                text-align: center;
+                                padding: 30px 0 0 0;
+                                border-top: 1px solid #ccc;
+                                button {
+                                    width:160px;
+                                    height: 56px;
+                                    color:#fff;
+                                    background: #fb5001;
+                                    border-radius: 3px;
+                                    border: 1px solid #fb5001;
+                                    font-size: 14px;
+                                    font-weight: 600;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                    // 내용보기
+                    .view-box {
+                        margin-top: 10px;
+                        border-top: 1px solid #333;
+                        border-bottom: 1px solid #ccc;
+                        .view-title {
+                            padding: 20px;
+                            display: flex;
+                            justify-content: space-between;
+                            span {
+                                
+                                &:nth-child(1){
+                                    color: #333;
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                }
+                                &:nth-child(2){
+                                    color: #666;
+                                    font-size: 13px;
+                                }
+                            }
+                        }
+                        .gap {
+                            padding: 40px 20px 100px 20px;
+                            .contents {
+                                p {
+                                    color: #333;
+                                    font-size: 14px;
+                                    line-height: 50px;
+                                }
+                            }
+                        }
+                    }
+                    .view-button-box {
+                        margin-top: 25px;
+                        text-align: center;
+                        button {
+                            margin: 0 5px;
+                            width: 125px;
+                            height: 45px;
+                            background: #fb5001;
+                            border: 1px solid #fb5001;
+                            border-radius: 3px;
+                            color: #fff;
+                            font-size: 14px;
+                            font-weight: 600;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                // 이용안내
+                .use-info {
+                    .info-header {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        .info-title {
+                            font-size: 24px;
+                            font-weight: 500;
+                        }
+                    }
+                    ul.info-list {
+                        border-top: 1px solid #333;
+                        border-bottom: 1px solid #ddd;
+                        margin-top: 10px;
+                        li {
+                            border-bottom: 1px solid #eee;
+                            cursor: pointer;
+                            a {
+                                position: relative;
+                                display: block;
+                                padding: 15px 10px;
+                                .subject {
+                                    display: flex;
+                                    span {
+                                        color: #333;
+                                        font-size: 15px;
+                                        font-weight: 700;
+                                    }
+                                    p {
+                                        margin-left: 2px;
+                                        font-size: 15px;
+                                    }
+                                }
+                                .info-icon {
+                                    position: absolute;
+                                    top: 7px;
+                                    right: 10px;
+                                    i {
+                                        color: #999;
+                                        font-size: 25px;
+                                    }
+                                }
+                            }
+                            .info-answer {
+                                padding: 30px;
+                                background: #f8f8f8;
+                                p {
+                                    color: #666;
+                                    font-size: 14px;
+                                    line-height: 25px;
+                                    strong {
+                                        color: #000;
+                                        font-weight: 600;
+                                        vertical-align: top;
+                                    }
+                                    em {
+                                        color: #f05623;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                // 자주묻는 FAQ
+
+            }
+        }
+    }
+}
