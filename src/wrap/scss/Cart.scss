@@ -1,0 +1,430 @@
+#cart {
+    width:100%;    
+    user-select: none;
+    #section1 {
+        width:100%;
+        padding: 55px 0 100px 0;
+        .container {
+            width:100%;
+            max-width: 1050px;
+            margin: 0 auto;
+            .tittle {
+                width:100%;
+                text-align: left;                
+                h2 {
+                    font-size: 25px;
+                    font-weight: 700;
+                    color: #333;                    
+                }
+            }
+            .content {
+                width:100%;
+                .left {
+                    width: 100%;
+                    .cart-btn {
+                        width:100%;
+                        padding: 18px 0 10px 10px;
+                        display: flex;
+                        justify-content: space-between;     
+                        .check-box {
+                            display: flex;
+                            align-items: center;
+                            label {
+                                font-size: 14px;
+                                font-weight: 500;
+                                color: #444;
+                                input[type='checkbox'] {
+                                    width: 18px;
+                                    height: 18px;
+                                    appearance: none;
+                                    background: #fff;
+                                    border: 1px solid #bbb;
+                                    &:checked {
+                                        background: #FF6001 url(../../../public/images/cart/ico_form.png) -50px -30px;
+                                        border: 1px solid #FF6001;
+                                    }
+                                }
+                                span {
+                                    font-size: 16px;
+                                    padding: 0 0 0 15px;
+                                }
+                            }
+                            
+                        }
+                        .btn-box {
+                            button {
+                                padding: 5px 10px;
+                                font-size: 13px;
+                                font-weight: 600;
+                                height: 32px;
+                                color: #666;
+                                background: #fff;
+                                border: 1px solid #ccc;
+                                border-radius: 6px;
+                                font-family: 'Pretendard';
+                            }
+                        }
+                    }                    
+                }
+                .cart-list {
+                    width:100%;                       
+                    .cart-list-wrap {
+                        width:100%;
+                        >p {
+                            width:100%;
+                            padding: 100px 0;
+                            color:#999;
+                            font-size: 16px;
+                            text-align: center;
+                        }
+                        // 장바구니 리스트
+                        .list {
+                            width: 100%;
+                            border: 1px solid #bbb;
+                            border-top: 1px solid #333;
+                            margin-bottom: 30px;
+                            > .title {
+                                width: 100%;
+                                padding: 15px 15px;
+                                display: flex;
+                                border-bottom: 1px solid #bbb;
+                                span {
+                                    input[type='checkbox'] {
+                                        width: 18px;
+                                        height: 18px;
+                                        appearance: none;
+                                        background: #fff;
+                                        border: 1px solid #bbb;
+                                        &:checked {
+                                            background: #FF6001 url(../../../public/images/cart/ico_form.png) -50px -30px;
+                                            border: 1px solid #FF6001;
+                                        }
+                                    }
+                                    .title-txt {
+                                        font-size: 16px;
+                                        font-weight: 600;
+                                        margin-left: 10px;
+                                        line-height: 110%;
+                                    }                                   
+                                }
+                                button {
+                                    border: 0;
+                                    background: 0;
+                                    cursor: pointer;                                    
+                                }
+                            }
+                            > ul {
+                                width:100%;                                   
+                                overflow: hidden;
+                                background: #fff;
+                                > li {
+                                    width:100%;
+                                    border-bottom: 1px solid #eee;
+
+                                    .product-box {
+                                        width: 100%;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        padding: 30px 0;
+                                        .left-box {
+                                            width: 60%;
+                                            display: flex;
+                                            align-items: center;
+                                            padding: 0 15px;
+                                            input[type='checkbox'] {
+                                                width: 18px;
+                                                height: 18px;
+                                                appearance: none;
+                                                background: #fff;
+                                                border: 1px solid #bbb;
+                                                &:checked {
+                                                    background: #FF6001 url(../../../public/images/cart/ico_form.png) -50px -30px;
+                                                    border: 1px solid #FF6001;
+                                                }
+                                            }
+                                            .img-box {
+                                                padding: 0 15px;
+                                                img {
+                                                    width: 80px;
+                                                    height: 80px;
+                                                }
+                                            }
+                                            .product-info {
+                                                height: 80px;
+                                                display: flex;
+                                                flex-flow: column nowrap;
+                                                justify-content: space-between;
+                                                a {
+                                                    display: inline-block;
+                                                    h4 {
+                                                        font-size: 15px
+                                                    }
+                                                }
+                                                
+                                                h5 {
+                                                    font-size: 14px;
+                                                    color: #888;
+                                                }
+                                                span {
+                                                    display: inline-block;
+                                                    position: relative;
+                                                    padding: 10px 0 5px 0;
+                                                    strong {
+                                                        font-size: 15px;
+                                                        font-weight: 500;
+                                                    }
+                                                    &::before {
+                                                        content: '';
+                                                        position: absolute;
+                                                        
+                                                        top: 8px;
+                                                        left: 70px;
+                                                        width: 64px;
+                                                        height: 24px;
+                                                        background: url(../../../public/images/cart/txt_badge_dlv.png) no-repeat 0 0;
+                                                    }
+                                                    
+                                                }
+                                                
+                                            }
+                                        }
+                                        .right-box {
+                                            display: flex;
+                                            align-items: center;
+                                            width: 40%;
+                                            justify-content: space-between;
+                                            position: relative;
+                                            > ul{
+                                                display: flex;
+                                                width: 98px;
+                                                height:28px;
+                                                border: 1px solid #ddd;
+                                               > li {
+                                                    width:32px;
+                                                    height:100%;
+                                                    > button {
+                                                        border:0;
+                                                        background: #fff;
+                                                        width:100%;
+                                                        height:100%;
+                                                        cursor: pointer;
+                                                        i {
+                                                            color: #888;
+                                                        }
+                                                    }
+                                                    span {
+                                                        display: inline-flex;
+                                                        width:100%;
+                                                        height:100%;
+                                                        align-items: center;
+                                                        justify-content: center;
+                                                        font-size: 14px;
+                                                    }
+                                                }
+                                            }                                        
+                                            > span  {
+                                                text-align: right;
+                                                em {
+                                                    display: block;
+                                                    line-height: 180%;
+                                                    &:nth-child(1){
+                                                        font-size: 16px;
+                                                        font-weight: 500;
+                                                        color:#333;
+                                                    }
+                                                    &:nth-child(2){
+                                                        font-size: 14px;
+                                                        color:#999;
+                                                        text-decoration: line-through;
+                                                    }
+                                                }
+                                            }
+                                            .btn-box {
+                                                margin-right: 50px;
+                                                > button {
+                                                    width: 18px;
+                                                    height: 18px;
+                                                    background: transparent;
+                                                    border: 0;
+                                                    cursor: pointer;
+                                                    &::before {
+                                                        content: "";
+                                                        position: relative;
+                                                        display: inline-block;
+                                                        margin: 0 0 0 0;
+                                                        height: 18px;
+                                                        border: #333;
+                                                        border-style: solid;
+                                                        border-width: 0 1px 0 0;
+                                                        transform: rotate(-135deg);
+                                                    }
+                                                    &::after {
+                                                        content: "";
+                                                        position: relative;
+                                                        display: inline-block;
+                                                        margin: 0 0 0 0;
+                                                        height: 18px;
+                                                        border: #333;
+                                                        border-style: solid;
+                                                        border-width: 0 1px 0 0;
+                                                        transform: rotate(-45deg);
+                                                    }
+                                                    
+                                                }
+                                            }
+                                            
+                                        }
+                                    }
+                                    
+                                }
+                            }
+                            .group-price{
+                                background: #f8f8f8;
+                                width: 100%;
+                                height: 45px;
+                                padding: 15px 0;                                   
+                                p {
+                                    font-size: 14px;
+                                    text-align: center;
+                                    line-height: 120%;
+                                    strong {
+                                        vertical-align: top;
+                                        font-weight: 600;
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+                    }                      
+                }
+                .right {
+                    width:100%;
+                    padding-top: 30px;
+                    .payment-box{
+                        width:100%;
+                        background: #fff;
+                        border: 1px solid #333;
+                        ul{
+                            width:100%;
+                            display: flex;
+                            height: 120px;
+                            position: relative;
+                            li {
+                                border-right: 1px solid #333;
+                                width:100%;
+                                height: 100%;
+                                padding: 30px 0;
+                                align-items: center;
+                                text-align: center;
+                                &:last-child {
+                                    border: 0;
+                                }
+                                strong {
+                                    
+                                    font-size: 15px;
+                                    color: #333;
+                                }
+                                .num {
+                                    display: inline-block;
+                                    margin-top: 10px;
+                                    font-size: 26px;
+                                    font-weight: 600;
+                                }
+                                .num2 {
+                                    color: #FF6001;
+                                }
+                                i {
+                                    display: inline-block;
+                                    transform: translateY(6px);
+                                    font-size: 18px;
+                                }
+                                .minusimg {
+                                    width: 32px;
+                                    height: 32px;
+                                    background: url(../../../public/images/cart/ico_bullet.png) no-repeat -190px -60px;
+                                    position: absolute;
+                                    top: 35%;
+                                    left: 23.5%;
+                                }
+                                .plusimg {
+                                    width: 32px;
+                                    height: 32px;
+                                    background: url(../../../public/images/cart/ico_bullet.png) no-repeat 0 -60px;
+                                    position: absolute;
+                                    top: 35%;
+                                    left: 48.5%;
+                                }
+                                .result {
+                                    width: 32px;
+                                    height: 32px;
+                                    background: url(../../../public/images/cart/ico_bullet.png) no-repeat -50px -60px;
+                                    position: absolute;
+                                    top: 35%;
+                                    right: 23.5%;
+                                }
+                                span {
+                                    font-weight: 400;
+                                    font-size: 18px;
+                                    color: #333;
+                                    font-weight: normal;
+                                }
+                                hr {
+                                    width:100%;
+                                    border:0;
+                                    border-bottom: 1px solid #eee;
+                                }
+                            }
+                        }
+                    }
+                    .info-box{
+                        width:100%;
+                        margin: 50px auto;
+                        .text-box{
+                            justify-content: center;
+                            display: flex;
+                            width: 100%;
+                            p {
+                                color:#666;                            
+                                font-size: 13px;
+                                padding-left: 8px;                            
+                                text-align: left;
+                                line-height: 120%;
+                            }
+                        }
+                    }
+                    .button-box{
+                        display: flex;                                               
+                        justify-content: center;
+                        .shop {
+                            min-width: 370px;
+                            height: 65px;
+                            background: #fff;
+                            color:#333;
+                            font-weight: 400;
+                            font-size: 20px;
+                            border: 1px solid #666;
+                            border-radius: 3px;
+                            padding: 15px 25px;
+                            margin-right: 10px;
+                            cursor: pointer;
+                        }
+                        .order {
+                            min-width: 370px;
+                            height: 65px;
+                            background: #FF6001;
+                            color:#fff;
+                            font-weight: 400;
+                            font-size: 20px;
+                            font-weight: 600;
+                            border: 1px solid #FF6001;
+                            border-radius: 3px;
+                            padding: 15px 25px;
+                            cursor: pointer;
+                        }                        
+                    }
+                }
+            }
+        }
+    }
+}

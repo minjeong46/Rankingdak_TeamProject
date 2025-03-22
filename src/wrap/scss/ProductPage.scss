@@ -1,0 +1,363 @@
+#productPage{
+    width: 100%;
+    height: 1200px;
+    padding: 0 0 100px 0;
+    #section1{
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+        .container{
+            width: 100%;
+            padding: 70px 0 0 0;
+            .content{
+                display: flex;
+                justify-content: space-between;
+                .left{
+                    width: 480px;
+                    img{
+                        width: 100%;
+                        margin: 0 0 15px 0;
+                    }
+                    a{
+                        width: 100%;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+                .right{
+                    width: 560px;
+                    padding: 0 40px 0 0;
+                    .right-top{
+                        width: 100%;
+                        .title{
+                            width: 100%;
+                            margin: 0 0 10px 0;
+                            line-height: 35px;
+                            h1{
+                                font-size: 26px;
+                                font-weight: 500;
+                            }
+                        }
+                        .review{
+                            width: 100%;
+                            display: flex;
+                            justify-content: left;
+                            align-items: center;
+                            img{
+                                width: 16px;
+                                height: 16px;
+                            }
+                            h3{
+                                font-size: 13px;
+                                color: #555;
+                                margin: 0 5px;
+                                line-height: 13px;
+                                span{
+                                    color: #555;
+                                    font-size: 14px;
+                                }   
+                            }
+                            > span{
+                                font-size: 13px;
+                                color: #999;
+                                transform: translateY(-1px);
+                            }
+                        }
+                        .price-box{
+                            display: flex;
+                            justify-content: space-between;
+                            .price{
+                                display: flex;
+                                margin: 18px 0 0 0;
+                                p{
+                                    display: inline-block;
+                                    color: #ff6001;
+                                    font-size: 20px;
+                                    margin: 0 4px 0 0;
+                                    em{
+                                        font-size: 35px;
+                                        font-weight: 700;
+                                        vertical-align: baseline;
+                                    }
+                                }
+                                span{
+                                    font-size: 20px;
+                                    font-weight: 700;
+                                    margin: 0 4px 0 0;
+                                    em{
+                                        font-size: 35px;
+                                        vertical-align: baseline;
+                                    }
+                                    &:nth-child(3){
+                                        font-size: 14px;
+                                        font-weight: 400;
+                                        line-height: 10px;
+                                        color: #aaa;
+                                        text-decoration: line-through;
+                                        transform: translateY(19px);
+                                    }
+                                }
+                                
+                            }
+                            .button-box{
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                a{
+                                    img{
+    
+                                    }
+                                    &:nth-child(2){
+                                        margin: 0 0 0 15px;
+                                        img{
+                                            color: #000;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .price2{
+                            margin: 4px 0 0 0;
+                            font-size: 13px;
+                            color: #666;
+                            line-height: 140%;
+                        }
+                    }
+                    .right-bottom{
+                        margin: 20px 0 0 0;
+                        border-top: 1px solid #ededed ;
+                        padding: 8px 0 0 0;
+                        > ul {
+                            padding: 0 0 15px 0;
+                            li{
+                                display: flex;
+                                align-items: center;
+                                text-align: left;
+                                font-size: 14px;
+                                p{
+                                    width: 100px;
+                                    padding: 12px 0;
+                                    color: #666;
+
+                                }
+                                span{
+                                    color: #333;
+                                }
+                                img{
+                                    width: 64px;
+                                    height: 12px;
+                                }
+                                &:nth-child(4){
+                                    height: 69px;
+                                    p{
+                                        line-height: 45px;
+                                        transform: translateY(-10px);
+                                    }
+                                    span{
+                                        line-height: 22px;
+                                    }
+                                }
+                            }
+                        }
+                        .option{
+                            width: 100%;
+                            height: 50px;
+                            
+                            a{
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                width: 100%;
+                                height: 100%;
+                                padding: 12px 20px;
+                                border: 1px solid #ccc;
+                                border-radius: 4px;
+                                span{
+                                    font-size: 15px;
+                                    color: #666;
+                                }
+                                i{
+                                    font-size: 32px;
+                                    color: #666;
+                                }
+                                
+                                &.on{
+                                    border: 0;
+                                    border-radius: 4px 4px 0 0;
+                                    &:focus{
+                                        outline: 1px solid #666;
+                                        outline-offset: -1px;
+                                    }
+                                    i{
+                                        transform: rotate(180deg);
+                                    }
+                                }
+                            }
+                            
+                            
+                            
+                        }
+                        .option-list{
+                            width: 100%;
+                            ul{
+                                width: 100%;
+                                border: 1px solid #666;
+                                border-top: 0;
+                                li{
+                                    width: 100%;
+                                    height: 80px;
+                                    border-bottom: 1px solid #ddd;
+                                    padding: 17px 14px;
+                                    cursor: pointer;
+                                    &:last-child{
+                                        border-bottom: 0;
+                                    }
+                                    .product-name{
+                                        width: 100%;
+                                        line-height: 18px;
+                                        span{
+                                            font-size: 14px;
+                                            color: #333;
+                                        }
+                                    }
+                                    .product-price{
+                                        margin: 7px 0 0 0;
+                                        
+                                        p{
+                                            font-size: 14px;
+                                            em{
+                                                font-size: 15PX;
+                                                font-weight: 700;
+                                                vertical-align: baseline;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .option-product{
+                            margin: 8px 0 0 0;
+                            width: 100%;
+                            > ul{
+                                width: 100%;
+                                > li{
+                                    width: 100%;
+                                    height: 102px;
+                                    padding: 15px 20px;
+                                    background: #f8f8f8;
+                                    border-radius:6px;
+                                    margin: 0 0 10px 0;
+                                    .row1{
+                                        width: 100%;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        margin: 0 0 20px 0;
+                                        span{
+                                            color: #333;
+                                            font-size: 14px;
+                                        }
+                                        a{
+                                            width: 10px;
+                                            i{
+                                                font-size: 17px;
+                                                font-weight: 100;
+                                            }
+                                        }
+                                    }
+                                    .row2{
+                                        width: 100%;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        ul{
+                                            width: 99px;
+                                            height: 30px;
+                                            display: flex;
+                                            border: 1px solid #ddd;
+                                            li{
+                                                background: #fff;
+                                                width: 33px;
+                                                height: 100%;
+                                                text-align: center;
+                                                span{
+                                                display: inline-flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                width: 100%;
+                                                height: 100%;
+
+                                                }
+                                                button{
+                                                    width: 100%;
+                                                    height: 100%;
+                                                    border: 0;
+                                                    background: #fff;
+                                                    cursor: pointer;
+                                                    i{
+                                                        font-size: 20px;
+                                                        color: #000;
+                                                        font-weight: 700;
+                                                    }
+                                                    img{
+                                                        width: 23px;
+                                                        opacity: 1;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        p{
+                                            transform: translateY(12px);
+                                            em{
+                                                font-size: 22px;
+                                                font-weight: 700;
+                                                vertical-align: baseline;
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .price3{
+                            margin: 30px 0 0 0;
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            span{
+                                font-size: 14px;
+                                color: #333;
+                            }
+                            p{
+                                font-size: 15px;
+                                font-weight: 700;
+                                color: #333;
+                                strong{
+                                    font-size: 26px;
+                                    font-weight: bold;
+                                    vertical-align: baseline;
+
+                                }
+                            }
+                        }
+                        .cart-box{
+                            margin: 15px 0 30px 0 ;
+                            width: 100%;
+                            button{
+                                width: 100%;
+                                height: 50px;
+                                background: #ff6001;
+                                border: 1px solid #ff6001;
+                                border-radius: 5px;
+                                color: #fff;
+                                font-size: 18px;
+                                font-weight: 600;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}

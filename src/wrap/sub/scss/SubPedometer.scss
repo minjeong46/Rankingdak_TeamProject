@@ -1,0 +1,207 @@
+#pedometer {
+    width: 100%;
+    #section {
+        width: 100%;
+        .container {
+            width: 100%;
+            text-align: center;
+            .sec1 {
+                width: 100%;
+                position: relative;
+                .gr-box {
+                    position: absolute;
+                    top: 110px;
+                    left: 405px;
+                    z-index: 2;
+                    h2 {
+                        font-size: 22px;
+                        padding: 0 0 20px 0;
+                        color: #FF5639;
+                        font-weight: 700;
+                        line-height: 20px;
+                        text-align: left;
+                    }
+                    p {
+                        font-size: 32px;
+                        font-weight: 700;
+                        line-height: 46px;
+                        padding-bottom: 20px;
+                        text-align: left;
+                    }
+                    .txt-box {
+                        font-size: 20px;
+                        font-weight: 500;
+                        line-height: 26px;
+                        text-align: left;
+                        padding-bottom: 20px;
+                    }
+                    .count-box {                        
+                        h3 {                            
+                            padding: 15px 30px;
+                            border-radius: 99px;
+                            border: 1px solid #FF6001;
+                            background: #F8F8F8;
+                            color: #FF6001;
+                            font-size: 20px;
+                            font-weight: 500;
+                            display: flex;
+                            align-items: center;
+                            span {
+                                text-align: left;
+                                color: #333;
+                                font-size: 20px;
+                                font-weight: 600;                                
+                                &#counter {
+                                    color: #FF6001;
+                                    font-size: 32px;
+                                    font-weight: 700;
+                                    margin: 0 4px 0 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .sec2 {                
+                width: 1100px;
+                border: 1px solid #E6E6E6;
+                border-radius: 20px;
+                justify-content: center;
+                align-items: center;
+                margin: auto;
+                .img-box {
+                    img {
+                        vertical-align: top;
+                        max-width: 100%;
+                    }
+                }
+            }
+            .sec3 {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-top: 100px;
+                .img-box{
+                    width: 550px;
+                    height: 550px;
+                    background: #F8F8F8;
+                    border-radius: 20px;
+                    img {
+                        width: 500px;
+                        height: 487px;
+                    }
+                }
+                .txt-box {
+                    width: 550px;
+                    height: auto;
+                    vertical-align: center;
+                    text-align: center;
+                    padding: 0 0 0 100px;
+                    position: relative;
+                    h2 {
+                        text-align: left;
+                        width: auto;
+                        color: #FF5639;
+                        font-size: 32px;
+                        font-weight: 700;
+                        line-height: 46px;
+                        padding: 0 0 20px 0;
+                    }
+                    .sub-box {
+                        width: 450px;                                                
+                        text-align: left;
+                        font-size: 20px;
+                        font-weight: 500;
+                        line-height: 26px;
+                        margin: auto;                        
+                    }
+                }
+            }
+            .sec4 {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-top: 100px;
+                .img-box{
+                    width: 550px;
+                    height: 550px;
+                    background: #F8F8F8;
+                    border-radius: 20px;
+                    img {
+                        width: 500px;
+                        height: 487px;
+                    }
+                }
+                .txt-box {
+                    width: 550px;
+                    height: auto;
+                    vertical-align: center;
+                    text-align: center;
+                    padding: 0 0 0 100px;
+                    position: relative;
+                    h2 {
+                        text-align: left;
+                        width: auto;
+                        color: #FF5639;
+                        font-size: 32px;
+                        font-weight: 700;
+                        line-height: 46px;
+                        padding: 0 0 20px 0;
+                    }
+                    .sub-box {
+                        width: 450px;                                                
+                        text-align: left;
+                        font-size: 20px;
+                        font-weight: 500;
+                        line-height: 26px;
+                        margin: auto;                        
+                    }
+                }
+            }
+            .sec5 {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 100px 0;
+                .img-box{
+                    width: 550px;
+                    height: 550px;
+                    background: #F8F8F8;
+                    border-radius: 20px;
+                    img {
+                        width: 500px;
+                        height: 487px;
+                    }
+                }
+                .txt-box {
+                    width: 550px;
+                    height: auto;
+                    vertical-align: center;
+                    text-align: center;
+                    padding: 0 0 0 100px;
+                    position: relative;
+                    h2 {
+                        text-align: left;
+                        width: auto;
+                        color: #FF5639;
+                        font-size: 32px;
+                        font-weight: 700;
+                        line-height: 46px;
+                        padding: 0 0 20px 0;
+                    }
+                    .sub-box {
+                        width: 450px;                                                
+                        text-align: left;
+                        font-size: 20px;
+                        font-weight: 500;
+                        line-height: 26px;
+                        margin: auto;                        
+                    }
+                }
+            }
+        }
+    }
+}
