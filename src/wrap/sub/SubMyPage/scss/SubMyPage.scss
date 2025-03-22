@@ -1,0 +1,825 @@
+.mypage {
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    #section1 {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 100px;
+        .container {
+            width: 100%;
+            height: 100%;
+            max-width: 1903px;
+            margin: 0 auto;
+            text-align: center;
+            .my-info {
+                width: 100%;
+                height: 190px;
+                background: #f7f7f7;
+                .my-info-box {
+                    width: 1100px;
+                    padding: 30px 10px;
+                    margin: 0 auto;
+                    display: flex;
+                    .mybox{
+                        width: 590px;
+                        padding: 25px;
+                        display: flex;
+                        text-align: left;
+                        background: #fff;
+                        .img-box {
+                            padding: 8px 15px 8px 0;
+                            
+                            i {
+                                width: 60px;
+                                height: 62px;
+                                display: inline-flex;
+                                background: url(../../../../../public/images/sub/mypage/ico_cou_level.png) 0 0;
+                            }
+                        }
+                        .txt-box {
+                            padding-right: 30px;
+                            h3 {
+                                font-size: 20px;
+                                padding-bottom: 15px;
+                                strong {
+                                    font-size: 20px;
+                                    font-weight: 600;
+                                    vertical-align: top;
+                                }
+                            }
+                            ul {
+                                display: flex;
+                                align-items: center;
+                                padding-bottom: 10px;
+                                li {
+                                    padding-right: 15px;
+                                    &:nth-child(2){
+                                        padding-right: 20px;
+                                    }
+                                    a {
+                                        display: inline-block;
+                                        font-size: 13px;
+                                        color: #555;
+                                        img {
+                                            padding-left: 5px;
+                                            transform: translateY(-1px);
+                                        }
+                                        span {
+                                            display: block;
+                                            background: #fff2e2;
+                                            padding: 4px 8px 4px 0;
+                                            position: relative;
+                                            border-radius: 0 10px 10px 0;
+                                            &::before {
+                                                content: '';
+                                                display: block;
+                                                position: absolute;
+                                                top: 50%;
+                                                left: -7px;
+                                                width: 9px;
+                                                height: 9px;
+                                                border: 0;
+                                                border-right: 7px solid #fff2e2;
+                                                border-bottom: 7px solid #fff2e2;
+                                                transform: translateY(-50%) rotate(135deg); // 같이, 따로하면 따로 적용
+                                            }
+                                            img {
+                                                width: 15px;
+                                                height: 12px;
+                                            }
+                                            em {
+                                                font-size: 13px;
+                                                color: #ff6001;
+                                                font-weight: 500;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            a {
+                                display: inline-block;
+                                p {
+                                    font-size: 13px;
+                                    color: #ff6001;
+                                }
+                            }
+    
+                        }
+    
+                    } 
+                    .box {
+                        width: 15.45%;
+                        background: #fff;
+                        margin-left: 10px;
+                        padding: 0 25px;
+                        text-align: left;
+                        display: flex;
+                        flex-flow: column;
+                        justify-content: center;
+                            h4 {
+                                font-size: 13px;
+                                color: #666;
+                                margin-bottom: 10px;
+                            }
+                            a {
+                                
+                                em {
+                                    font-size: 28px;
+                                    font-weight: 600;
+                                }
+                                strong {
+                                    font-size: 24px;
+                                    font-weight: 600;
+                                    vertical-align: bottom;
+                                }
+        
+                                
+                            }
+                            
+                        &.point {
+                            a {
+                                color: #ff6001;
+                            }
+                        }
+                    }
+                }
+            }
+            .content {
+                width: 100%;
+                max-width: 1100px;
+                height: 100%; //calc(100vh - 190px);
+                margin: 45px auto;
+                display: flex;
+                justify-content: space-between;
+                .left {
+                    width: 220px;
+                    height: 100%;
+                    nav {
+                        width: 100%;
+                        .main-list {
+                            width: 100%;
+                            padding: 12px 24px;
+                            border: 1px solid #ddd;
+                            text-align: left;
+                            > li {
+                                padding: 16px 0;
+                                border-bottom: 1px solid #eee;
+                                &:last-child {
+                                    border-bottom: 0;
+                                }
+                                > a {
+                                    font-size: 15px;
+                                    font-weight: 500;
+                                    color: #333;
+                                    
+                                }
+                                .sub-list {
+                                    li {
+                                        margin-top: 8px;
+                                        a {
+                                            font-size: 14px;
+                                            color: #555;
+                                            &.on {
+                                                color: #ff6001;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .user-service-box {
+                            width: 100%;
+                            padding: 12px 24px;
+                            border: 1px solid #ddd;
+                            text-align: left;
+                            margin-top: 15px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            a {
+                                width: 100%;
+                                display: flex;
+                                align-items: center;
+                                i {
+                                    width: 22px;
+                                    height: 16px;
+                                    display: block;
+                                    background: url(../../../../../public/images/sub/mypage/ico_bullet.png) -120px -110px;
+                                    margin-right: 6px;
+                                }
+                                
+                                p {
+
+                                }
+                            }
+                            img {
+                                height: 10px;
+                            }
+                        }
+                    }
+                }
+                .right {
+                    width: 820px;
+                    height: 100%;
+                    margin: 0 auto;
+                    .title {
+                        width: 100%;
+                        border-bottom: 1px solid #333;
+                        h2 {
+                            text-align: left;
+                            font-size: 24px;
+                            font-weight: 500;
+                            margin-bottom: 12px;
+                        }
+                    }
+                    .right-content {
+                        width: 100%;
+                        height: 100%;
+                        margin: 0 auto;
+                        padding: 100px 175px;
+                        background: #f9f9f9;
+                        .txt-box {
+                            text-align: left;
+                            margin-bottom: 20px;
+                            h3 {
+                                font-size: 18px;
+                                font-weight: 500;
+                                margin-bottom: 10px;
+                            }
+                            p {
+                                font-size: 14px;
+                                color: #555;
+                                line-height: 140%;
+                            }
+                        }
+                        .input-box {
+                            width: 100%;
+                            padding-right: 106px;
+                            position: relative;
+                            input::placeholder{
+                                color: #aaa;
+                                font-size: 12px;
+                            }
+                            input[type='password']{
+                                width: 100%;
+                                height: 50px;
+                                padding: 3px 15px;
+                                position: relative;
+                                border-radius: 5px;
+                                border: 1px solid #ccc;
+                                outline-offset: -1px;
+                                outline: 1px solid transparent;
+                                transition: all 0.3s;
+                                &:focus {
+                                    outline-color: #333;
+                                }
+                            }
+                            input[type='submit']{
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                width: 100px;
+                                height: 50px;
+                                border: 0;
+                                background: #ff6001;
+                                border-radius: 5px;
+                                color: #fff;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                    .right-content-Delete {
+                        width: 100%;
+                        height: 100%;
+                        margin: 0 auto;
+                        .txt-box {
+                            text-align: left;
+                            background: #f9f9f9;
+                            padding: 50px 0 50px 130px;
+                            h3 {
+                                font-size: 18px;
+                                font-weight: 500;
+                                margin-bottom: 10px;
+                            }
+                            p {
+                                font-size: 14px;
+                                color: #555;
+                                line-height: 160%;
+                            }
+                        }
+                        .delete-form-box {
+                            padding: 50px 100px 90px;
+                            background: #fff;
+                            font-family: Pretendard;
+                            form {
+                                width: 100%;
+                                text-align: left;
+                                strong {
+                                    font-size: 15px;
+                                    display: inline-block;
+                                    margin-bottom: 6px;
+                                    font-weight: 500;
+                                }
+                                .select-box {
+                                    position: relative;
+                                    cursor: pointer;
+                                    margin-bottom: 6px;
+                                    .box {
+                                        position: relative;
+                                        width: 100%;
+                                        height: 50px;
+                                        padding: 6px 18px;
+                                        border: 1px solid #ccc;
+                                        background: #fff;
+                                        &.on {
+                                            border: 1px solid #333;
+                                            border-bottom: 1px solid #ccc;
+                                        }
+                                        button {
+                                            width: 100%;
+                                            height: 100%;
+                                            border: 0;
+                                            background: 0;
+                                            display: flex;
+                                            justify-content: space-between;
+                                            align-items: center;
+                                            cursor: pointer;
+                                            span {
+                                                font-size: 13px;
+                                                color: #999;
+                                            }
+                                            img {
+                                                width: 5px;
+                                                height: 10px;
+                                                transform: rotate(90deg);
+                                                
+                                            }
+                                        }
+                                        
+                                    }
+                                    .select-list {
+                                        width: 100%;
+                                        position: absolute;
+                                        z-index: 2;
+                                        border: 1px solid #333;
+                                        border-top: 0;
+                                        background: #fff;
+                                        height: auto;
+                                        ul {
+                                            width: 100%;
+                                            li {
+                                                width: 100%;
+                                                height: 40px;
+                                                padding: 5px 15px;
+                                                border-bottom: 1px solid #ddd;
+                                                font-size: 14px;
+                                                line-height: 200%;
+                                                text-align: left;
+
+                                                a {
+                                                    display: block;
+                                                    width: 100%;
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                }
+                                .textarea-box {
+                                    width: 100%;
+                                    height: 160px;
+                                    textarea::placeholder{
+                                        color: #aaa;
+                                    }
+                                    textarea {
+                                        width: 100%;
+                                        height: 100%;
+                                        min-height: 60px;
+                                        padding: 15px 20px;
+                                        border: 1px solid #ccc;
+                                        font-size: 14px;
+                                        resize: none;
+                                        outline: 0;
+                                        font-family: Pretendard;
+                                    }
+                                    
+                                }
+                                .btn-box {
+                                    padding-top: 30px;
+                                    text-align: center;
+                                    input[type='button']{
+                                        width: 180px;
+                                        height: 48px;
+                                        border: 1px solid #333;
+                                        background: #fff;
+                                        border-radius: 6px;
+                                        font-size: 15px;
+                                        text-align: center;
+                                        color: #555;
+                                        margin-right: 10px;
+                                        cursor: pointer;
+                                    }
+                                    input[type='submit']{
+                                        width: 180px;
+                                        height: 48px;
+                                        border: 1px solid #fff;
+                                        background: #333;
+                                        border-radius: 6px;
+                                        font-size: 15px;
+                                        text-align: center;
+                                        color: #fff;
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+                        }
+                        .btn-box {
+                            padding-top: 30px;
+                            text-align: center;
+                            input[type='button']{
+                                width: 180px;
+                                height: 48px;
+                                border: 1px solid #333;
+                                background: #fff;
+                                border-radius: 6px;
+                                font-size: 15px;
+                                text-align: center;
+                                color: #555;
+                                margin-right: 10px;
+                                cursor: pointer;
+                                &#okBtn{
+                                    border: 1px solid #fff;
+                                    background: #333;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                    .right-content-update {
+                        width: 720px;
+                        height: 100%;
+                        margin: 0 auto;
+                        padding: 50px 100px 90px;
+                        background: #fff;
+                        form {
+                            width: 100%;
+                            ul {
+                                width: 100%;
+                                li {
+                                    width: 100%;
+                                    .gap {
+                                        width: 100%;
+                                        height: auto;
+                                        margin-top: 20px;
+                                        position: relative;
+                                        &.last {
+                                            padding: 5px 0;
+                                            p {
+                                                font-size: 14px;
+                                                color: #aaa;
+                                            }
+                                        }
+                                        
+                                        .label-box {
+                                            position: absolute;
+                                            left: 0;
+                                            top: 18px;
+                                            height: 50px;
+                                            label {
+                                                font-size: 14px;
+                                                font-weight: 500;
+                                                i {
+                                                    display: inline-block;
+                                                    width: 4px;
+                                                    height: 4px;
+                                                    border-radius: 50%;
+                                                    background: #ff6001;
+                                                    vertical-align: top;
+                                                    margin: 2px 0 0 2px;
+                                                }
+                                            }
+                                        }
+                                        .id-box {
+                                            display: flex;
+                                            padding-left: 105px;
+                                            height: 50px;
+                                            span {
+                                                display: inline-flex;
+                                                align-items: center;
+                                            }
+                                        }
+                                        .input-btn-box {
+                                            display: flex;
+                                            width: 100%;
+                                            min-height: 50px;
+                                            padding-left: 105px;
+                                            position: relative;
+                                            &.phone-box {
+                                                padding-right: 65px;
+                                            }
+                                            input::placeholder{
+                                                color: #aaa;
+                                            }
+                                            input[type='password'],
+                                            input[type='text'] {
+                                                width: 100%;
+                                                height: 50px;
+                                                border-radius: 5px;
+                                                border: 1px solid #ccc;
+                                                padding: 3px 15px;
+                                                background: #fff;
+                                                font-size: 13px;
+                                                color: #333;
+                                                outline-offset: -1px;
+                                                outline: 1px solid transparent;
+                                                transition: all 0.3s;
+                                                margin-right: 8px;
+                                                position: relative;
+                                                &:focus {
+                                                    outline-color: #333;
+                                                }
+                                                
+                                            }
+                                            label {
+                                                margin: 10px 30px 0 0;
+                                                cursor: pointer;
+                                                input[type='radio']{
+                                                    margin-right: 10px;
+                                                    appearance: none;
+                                                    width: 20px;
+                                                    height: 20px;
+                                                    border-radius: 50%;
+                                                    background: #fff;
+                                                    border: 1px solid #ddd;
+                                                    position: relative;
+                                                    cursor: pointer;
+                                                    &:checked {
+                                                        &::after {
+                                                            content: '';
+                                                            position: absolute;
+                                                            top: 4px;
+                                                            left: 4px;
+                                                            width: 10px;
+                                                            height: 10px;
+                                                            background: #ff6001;
+                                                            border-radius: 50%;
+        
+                                                        }
+                                                    }
+                                                }
+                                                span {
+                                                    font-size: 16px;
+                                                }
+                                            }
+                                            
+                                            button {
+                                                position: absolute;
+                                                top: 0;
+                                                right: 0;
+                                                width: 65px;
+                                                height: 50px;
+                                                border: 1px solid #333;
+                                                border-radius: 5px;
+                                                background: #fff;
+                                                color: #444;
+                                                font-size: 12px;
+                                                cursor: pointer;
+                                                &.on {
+                                                    border: 1px solid #ff6001;
+                                                    border-radius: 5px;
+                                                    background: #fff;
+                                                    color: #ff6001; 
+                                                }
+                                            }
+                                            &.pw {
+                                                display: block;
+                                                input {
+                                                    &:last-child{
+                                                        margin-top: 6px;
+                                                    }
+                                                }
+                                            }
+                                            &.phone {
+                                                margin-top: 6px;
+                                                position: relative;
+                                                .timer {
+                                                    position: absolute;
+                                                    display: flex;
+                                                    z-index: 2;
+                                                    top: 18px;
+                                                    right: 90px;
+                                                    font-size: 14px;
+                                                    color: #FF490F;
+                                                }
+                                            }
+                                        }
+                                        .select-box {
+                                            position: relative;
+                                            cursor: pointer;
+                                            .box {
+                                                position: relative;
+                                                width: 150px;
+                                                height: 50px;
+                                                padding: 5px 12px;
+                                                border: 1px solid #ccc;
+                                                border-radius: 5px;
+                                                background: #fff;
+                                                
+                                                .drop-btn {
+                                                    width: 100%;
+                                                    height: 100%;
+                                                    padding: 8px 12px;
+                                                    border: 0;
+                                                    display: flex;
+                                                    justify-content: space-between;
+                                                    align-items: center;
+                                                    cursor: pointer;
+                                                    span {
+                                                        font-size: 13px;
+                                                        color: #999;
+                                                    }
+                                                    img {
+                                                        width: 5px;
+                                                        height: 10px;
+                                                        transform: rotate(90deg);
+                                                    }
+                                                }
+                                            }
+                                            .select-list {
+                                                width: 150px;
+                                                position: absolute;
+                                                z-index: 2;
+                                                border: 1px solid #333;
+                                                border-top: 0;
+                                                background: #fff;
+                                                max-height: 300px;
+                                                overflow-y: auto;
+                                                text-align: left;
+                                                ul {
+                                                    width: 100%;
+                                                    li {
+                                                        width: 100%;
+                                                        height: 40px;
+                                                        padding: 5px 12px;
+                                                        border-bottom: 1px solid #ddd;
+                                                        font-size: 14px;
+                                                        line-height: 200%;
+                                                        a {
+                                                            display: block;
+                                                            width: 100%;
+                                                        }
+                                                    }
+                                                }
+                                            }
+        
+                                        }
+
+                                        
+                                        input[type='submit'] {
+                                            width: 100%;
+                                            height: 50px;
+                                            font-size: 15px;
+                                            color: #fff;
+                                            background: #c7c7c7;
+                                            border-radius: 5px;
+                                            border: 1px solid #c7c7c7;
+                                            margin-top: 20px;
+                                            cursor: pointer;
+                                            &.on {
+                                                background: #ff6001;
+                                                border: 1px solid #ff6001;
+                                            }
+                                        }
+                                    }
+                                    .guid-box {
+                                        padding-left: 105px;
+                                        text-align: left;
+                                        &.guid-box1 {
+                                            margin-top: 6px;
+                                            p {
+                                                font-size: 13px;
+                                                color: #FF490F;
+                                                line-height: 120%;
+                                                &.on {
+                                                    color: #999;
+                                                }
+                                            }
+                                        }
+                                        &.guid-box2 {
+                                            em {
+                                                font-size: 13px;
+                                                color: #999;
+                                                padding-top: 4px;
+                                                line-height: 120%;
+                                                &.on {
+                                                    color: #FF490F;
+                                                }
+                                            }
+                                        }
+                                        &.guid-box3 {
+                                            strong {
+                                                font-size: 13px;
+                                                color: #FF490F;
+                                                padding-top: 4px;
+                                                line-height: 120%;
+                                            }
+                                        }
+                                    }
+                                    
+                                }
+                            }
+                        }
+                    }
+                    .right-content-user-list {
+                        width: 100%;
+                        height: 100%;
+                        margin: 0 auto;
+                        .txt-box {
+                            text-align: left;
+                            background: #f9f9f9;
+                            padding: 50px 0 50px 130px;
+                            h3 {
+                                font-size: 18px;
+                                font-weight: 500;
+                                margin-bottom: 10px;
+                            }
+                            p {
+                                font-size: 14px;
+                                color: #555;
+                                line-height: 160%;
+                            }
+                        }
+                        .table-box {
+                            width: 820px;
+                            margin: 0 auto;
+                            margin-top: 10px;
+                            table {
+                                width: 100%;
+                                text-align: center;
+                                border-collapse: collapse;
+
+                                    col {
+                                        &:nth-child(3){
+                                            width: 8%;
+                                        }
+                                        &:nth-child(6){
+                                            width: 8%;
+                                        }
+                                        &:nth-child(7){
+                                            width: 12%;
+                                        }
+                                        &:nth-child(8){
+                                            width: 12%;
+                                        }
+                                    }
+                              
+                                tr,td,th {
+                                    padding: 5px;
+                                    font-size: 15px;
+                                    border: 1px solid #ddd;
+                                }
+                                thead {
+                                    line-height: 30px;
+
+                                    tr {
+
+                                    }
+                                    th {
+                                        border-right: 1px solid #fff;
+                                        background: #ff5e01;
+                                        color: #fff;
+                                    }
+                                }
+                                tbody {
+                                    line-height: 22px;
+                                    tr {
+                                        td {
+                                            font-size: 13px;
+                                            .update {
+                                                width: 25px;
+                                                height: 25px;
+                                                border: 0;
+                                                background: url(../../../../../public/images/sub/mypage/ico_btns.png) no-repeat;
+                                                background-position: -116px -156px;
+                                                cursor: pointer;
+                                            }
+                                            .delete {
+                                                width: 25px;
+                                                height: 25px;
+                                                border: 0;
+                                                background: url(../../../../../public/images/sub/mypage/ico_btns.png) no-repeat;
+                                                background-position: -26px -57px;
+                                                cursor: pointer;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
