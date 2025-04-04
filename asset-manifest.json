@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Rankingdak_TeamProject/static/css/main.2c4f4be0.css",
-    "main.js": "/Rankingdak_TeamProject/static/js/main.0daf65f6.js",
+    "main.js": "/Rankingdak_TeamProject/static/js/main.dfadcf84.js",
     "static/media/ico_img.png": "/Rankingdak_TeamProject/static/media/ico_img.d3871c7a0605292c78ec.png",
     "static/media/ico_cou_level.png": "/Rankingdak_TeamProject/static/media/ico_cou_level.9d2ead848018e1252547.png",
     "static/media/heart-icon.png": "/Rankingdak_TeamProject/static/media/heart-icon.934c50e9506f94571ed6.png",
@@ -11,10 +11,10 @@
     "index.html": "/Rankingdak_TeamProject/index.html",
     "static/media/icon_arrow_right_off.svg": "/Rankingdak_TeamProject/static/media/icon_arrow_right_off.00f547b26d35f6c486a6.svg",
     "main.2c4f4be0.css.map": "/Rankingdak_TeamProject/static/css/main.2c4f4be0.css.map",
-    "main.0daf65f6.js.map": "/Rankingdak_TeamProject/static/js/main.0daf65f6.js.map"
+    "main.dfadcf84.js.map": "/Rankingdak_TeamProject/static/js/main.dfadcf84.js.map"
   },
   "entrypoints": [
     "static/css/main.2c4f4be0.css",
-    "static/js/main.0daf65f6.js"
+    "static/js/main.dfadcf84.js"
   ]
 }
