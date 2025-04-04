@@ -1,8 +1,16 @@
 <?php
 
-    header('Access-Control-Allow-Origin: *');
-    header('Access-Control-Allow-Headers: *');
+    header("Access-Control-Allow-Origin: *"); 
+    header("Access-Control-Allow-Headers: *");
+    header("Access-Control-Allow-Methods: POST, GET, OPTIONS");
 
+    // OPTIONS 요청 처리 (preflight)
+    if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+        http_response_code(200);
+        exit();
+    }
+
+    // DB 연결
     $DB_SERVER = '141.164.53.27:3306';
     $DB_USER_NAME = 'hqservice';
     $DB_USER_PW = 'hqservice1!@#';
@@ -13,8 +21,6 @@
 
     if (!$conn) {
         die("❌ DB 연결 실패: " . mysqli_connect_error());
-    } else {
-        echo "✅ DB 연결 성공!";
     }
 
 ?>
