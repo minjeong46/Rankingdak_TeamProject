@@ -223,7 +223,7 @@ export default function SubMyPageRightUserUpdateComponentChild ({회원정보}) 
             const formDate = new FormData();
             formDate.append('userId', state.아이디)
             axios({
-                url:'https://mj46.co.kr/rankingdak/rankingdak_user_id_check.php',
+                url:'http://52.79.74.85/rankingdak_user_id_check.php',
                 method:'POST',
                 data: formDate
             })
@@ -584,7 +584,7 @@ export default function SubMyPageRightUserUpdateComponentChild ({회원정보}) 
         formData.append('userLiftMember', state.평생회원);
 
         axios({
-            url:'https://mj46.co.kr/rankingdak/rankingdak_user_update.php',
+            url:'http://52.79.74.85/rankingdak_user_update.php',
             method:'POST',
             data: formData 
         })

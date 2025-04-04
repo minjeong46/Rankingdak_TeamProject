@@ -69,7 +69,7 @@ export default function SubMyPageRightUserDeletePwCheckComponentChild () {
         formData.append('userPw', state.비밀번호);
 
         axios({
-            url:'https://mj46.co.kr/rankingdak/rankingdak_user_pw_search_check_update.php',
+            url:'http://52.79.74.85/rankingdak_user_pw_search_check_update.php',
             method:'POST',
             data: formData 
         })

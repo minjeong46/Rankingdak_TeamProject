@@ -405,7 +405,7 @@ export default function SubUserSignInPwSearchComponent () {
         formData.append('userId', state.아이디);
 
         axios({
-            url:'https://mj46.co.kr/rankingdak/rankingdak_user_pw_search_phone.php',
+            url:'http://52.79.74.85/rankingdak_user_pw_search_phone.php',
             method:'POST',
             data: formData 
         })
@@ -454,7 +454,7 @@ export default function SubUserSignInPwSearchComponent () {
         formData.append('userId', state.아이디);
 
         axios({
-            url:'https://mj46.co.kr/rankingdak/rankingdak_user_pw_search_email.php',
+            url:'http://52.79.74.85/rankingdak_user_pw_search_email.php',
             method:'POST',
             data: formData 
         })

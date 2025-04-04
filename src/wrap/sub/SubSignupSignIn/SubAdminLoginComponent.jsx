@@ -100,7 +100,7 @@ export default function SubAdminLoginComponent () {
         formData.append('adminPw', state.비밀번호);
 
         axios({
-            url: 'https://mj46.co.kr/rankingdak/rankingdak_admin_signin.php',
+            url: 'http://52.79.74.85/rankingdak_admin_signin.php',
             method: 'POST',
             data: formData,
         })

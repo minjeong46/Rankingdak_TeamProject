@@ -39,7 +39,7 @@ export default function SubMyPageRightAdminUserListComponent () {
     React.useEffect(()=>{
 
         axios({
-            url:'https://mj46.co.kr/rankingdak/rankingdak_admin_user_select.php',
+            url:'http://52.79.74.85/rankingdak_admin_user_select.php',
             method: 'GET'
         })
         .then((res)=>{

@@ -141,7 +141,7 @@ export default function SubMyPageRightUserDeleteComponentChild () {
         formData.append('dContent', state.textValue);
 
         axios({
-            url:'https://mj46.co.kr/rankingdak/rankingdak_user_delete_form_insert.php',
+            url:'http://52.79.74.85/rankingdak_user_delete_form_insert.php',
             method:'POST',
             data: formData 
         })
