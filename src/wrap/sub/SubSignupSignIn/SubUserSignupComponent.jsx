@@ -219,33 +219,32 @@ export default function SubUserSignupComponent () {
                 method:'POST',
                 data: formDate
             })
-            .then((res)=>{
-                if(res.status===200){
+            .then((res) => {
+                if (res.status === 200) {
                     const result = Number(res.data);
-                    console.log('res.data:', res.data);
-                    console.log('타입:', typeof res.data);
+                    console.log('res.data:', result);
+                    console.log('타입:', typeof result);
+                
                     if (result === 0) {
-                        아이디중복확인 = true;
-                        confirmModalMethod('사용가능한 아이디입니다.')
-                        idGuidText = '사용 가능한 아이디입니다.';
-                        인증된아이디 = state.아이디;
-                        
-                    }
-                    else if (result === 1) {
+                        confirmModalMethod('사용가능한 아이디입니다.');
+                        setState((prev) => ({
+                        ...prev,
+                        아이디중복확인: true,
+                        idGuidText: '사용 가능한 아이디입니다.',
+                        인증된아이디: state.아이디,
+                        }));
+                    } else if (result === 1) {
                         confirmModalMethod('사용 불가능한 아이디입니다.');
-                        idGuidText = '사용 불가능한 아이디입니다.';
-                        아이디중복확인 = false;
+                        setState((prev) => ({
+                        ...prev,
+                        아이디중복확인: false,
+                        idGuidText: '사용 불가능한 아이디입니다.',
+                        }));
                     }
-                    setState({    
-                        ...state,
-                        아이디중복확인: 아이디중복확인,
-                        idGuidText: idGuidText,
-                        인증된아이디: 인증된아이디,
-                    })
                 }
-            })
+              })
             .catch((err)=>{
-
+                console.error('axios 에러:', err);
             })
 
         }
