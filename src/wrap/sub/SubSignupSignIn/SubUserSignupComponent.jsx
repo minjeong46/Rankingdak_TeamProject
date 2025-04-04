@@ -221,15 +221,16 @@ export default function SubUserSignupComponent () {
             })
             .then((res)=>{
                 if(res.status===200){
-                    console.log(res.data);
-                    if(res.data===0){
+                    console.log('res.data:', res.data);
+                    console.log('타입:', typeof res.data);
+                    if (res.data === '0') {
                         아이디중복확인 = true;
                         confirmModalMethod('사용가능한 아이디입니다.')
                         idGuidText = '사용 가능한 아이디입니다.';
                         인증된아이디 = state.아이디;
                         
                     }
-                    else if(res.data===1) {
+                    else if (res.data === '1') {
                         confirmModalMethod('사용 불가능한 아이디입니다.');
                         idGuidText = '사용 불가능한 아이디입니다.';
                         아이디중복확인 = false;
