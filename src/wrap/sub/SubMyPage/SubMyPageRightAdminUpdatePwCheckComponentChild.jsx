@@ -55,7 +55,7 @@ export default function SubMyPageRightAdminUpdatePwCheckComponentChild () {
         formData.append('adminPw', state.비밀번호);
 
         axios({
-            url:'http://52.79.74.85/rankingdak_admin_pw_search_check_update.php',
+            url:'https://rankingdark.store/rankingdak_admin_pw_search_check_update.php',
             method:'POST',
             data: formData 
         })

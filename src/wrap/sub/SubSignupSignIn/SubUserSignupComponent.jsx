@@ -215,7 +215,7 @@ export default function SubUserSignupComponent () {
             const formDate = new FormData();
             formDate.append('userId', state.아이디)
             axios({
-                url:'http://52.79.74.85/rankingdak_user_id_check.php',
+                url:'https://rankingdark.store/rankingdak_user_id_check.php',
                 method:'POST',
                 data: formDate
             })
@@ -579,7 +579,7 @@ export default function SubUserSignupComponent () {
         formData.append('userAgreement', state.이용약관동의);
 
         axios({
-            url:'https://mj46.co.kr/rankingdak/rankingdak_user_insert.php',
+            url:'https://rankingdark.store/rankingdak/rankingdak_user_insert.php',
             method:'POST',
             data: formData 
         })

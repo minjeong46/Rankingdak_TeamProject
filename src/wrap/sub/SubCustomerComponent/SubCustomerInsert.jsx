@@ -88,7 +88,7 @@ export default function SubCustomerInsert(){
             formData.append('wContent', state.내용);
 
             axios({
-                url:'https://mj46.co.kr/rankingdak/rankingdak_notice_table_insert.php',
+                url:'https://rankingdark.store/rankingdak_notice_table_insert.php',
                 method: 'POST',
                 data: formData
             })

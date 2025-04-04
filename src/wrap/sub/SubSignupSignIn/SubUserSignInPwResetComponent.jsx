@@ -126,7 +126,7 @@ export default function SubUserSignInPwResetComponent () {
         formData.append('userPw', state.비밀번호);
 
         axios({
-            url: 'http://52.79.74.85/rankingdak_user_pw_reset.php',
+            url: 'https://rankingdark.store/rankingdak_user_pw_reset.php',
             method: 'POST',
             data: formData,
         })

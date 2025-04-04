@@ -222,7 +222,7 @@ export default function SubMyPageRightAdminUpdateComponentChild ({회원정보})
             const formDate = new FormData();
             formDate.append('adminId', state.아이디)
             axios({
-                url:'http://52.79.74.85/rankingdak_admin_id_check.php',
+                url:'https://rankingdark.store/rankingdak_admin_id_check.php',
                 method:'POST',
                 data: formDate
             })
@@ -572,7 +572,7 @@ export default function SubMyPageRightAdminUpdateComponentChild ({회원정보})
         formData.append('adminEmail', `${state.이메일}${state.value==='직접입력'?'':'@'+state.value}`);
 
         axios({
-            url:'https://mj46.co.kr/rankingdak/rankingdak_admin_update.php',
+            url:'https://rankingdark.store/rankingdak_admin_update.php',
             method:'POST',
             data: formData 
         })

@@ -571,7 +571,7 @@ export default function SubMyPageRightAdminUserUpdateComponentChild ({회원정�
         formData.append('userLiftMember', state.평생회원);
 
         axios({
-            url:'http://52.79.74.85/rankingdak_user_update.php',
+            url:'https://rankingdark.store/rankingdak_user_update.php',
             method:'POST',
             data: formData 
         })

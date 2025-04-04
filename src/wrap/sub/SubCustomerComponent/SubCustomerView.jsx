@@ -47,7 +47,7 @@ export default function SubCustomerView(){
         formData.append('idx', location.state.번호);
 
         axios({
-            url:'https://mj46.co.kr/rankingdak/rankingdak_notice_table_delete.php',
+            url:'https://rankingdark.store/rankingdak_notice_table_delete.php',
             method: 'POST',
             data: formData
         })

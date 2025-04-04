@@ -214,7 +214,7 @@ export default function SubAdminSignupComponent () {
             const formDate = new FormData();
             formDate.append('adminId', state.아이디)
             axios({
-                url:'http://52.79.74.85/rankingdak_admin_id_check.php',
+                url:'https://rankingdark.store/rankingdak_admin_id_check.php',
                 method:'POST',
                 data: formDate
             })
@@ -566,7 +566,7 @@ export default function SubAdminSignupComponent () {
         formData.append('adminAgreement', state.이용약관동의);
 
         axios({
-            url:'https://mj46.co.kr/rankingdak/rankingdak_admin_insert.php',
+            url:'https://rankingdark.store/rankingdak/rankingdak_admin_insert.php',
             method:'POST',
             data: formData 
         })

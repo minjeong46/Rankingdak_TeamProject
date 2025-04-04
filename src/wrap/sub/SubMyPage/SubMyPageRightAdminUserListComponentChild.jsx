@@ -52,7 +52,7 @@ export default function SubMyPageRightAdminUserListComponentChild ({유저목록
         formData.append('userId', item.아이디);
 
         axios({
-            url:'http://52.79.74.85/rankingdak_user_delete.php',
+            url:'https://rankingdark.store/rankingdak_user_delete.php',
             method:'POST',
             data: formData 
         })

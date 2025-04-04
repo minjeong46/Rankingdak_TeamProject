@@ -405,7 +405,7 @@ export default function SubAdminSignInPwSearchComponent () {
         formData.append('adminId', state.아이디);
 
         axios({
-            url:'http://52.79.74.85/rankingdak_admin_pw_search_phone.php',
+            url:'https://rankingdark.store/rankingdak_admin_pw_search_phone.php',
             method:'POST',
             data: formData 
         })
@@ -454,7 +454,7 @@ export default function SubAdminSignInPwSearchComponent () {
         formData.append('adminId', state.아이디);
 
         axios({
-            url:'http://52.79.74.85/rankingdak_admin_pw_search_email.php',
+            url:'https://rankingdark.store/rankingdak_admin_pw_search_email.php',
             method:'POST',
             data: formData 
         })

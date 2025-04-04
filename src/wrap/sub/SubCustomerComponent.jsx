@@ -79,7 +79,7 @@ export default function SubCustomerComponent(){
     // 공지 가져오기
     React.useEffect(()=>{
         axios({
-            url:'http://eyou46.dothome.co.kr/rankingdak/rankingdak_notice_table_select.php',
+            url:'https://rankingdark.store/rankingdak_notice_table_select.php',
             method:'GET'
         })
         .then((res)=>{
