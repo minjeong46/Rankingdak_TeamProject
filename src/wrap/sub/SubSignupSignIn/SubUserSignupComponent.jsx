@@ -581,7 +581,7 @@ export default function SubUserSignupComponent () {
         formData.append('userAgreement', state.이용약관동의);
 
         axios({
-            url:'https://rankingdark.store/rankingdak/rankingdak_user_insert.php',
+            url:'https://rankingdark.store/rankingdak_user_insert.php',
             method:'POST',
             data: formData 
         })

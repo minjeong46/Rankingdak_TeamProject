@@ -1,4 +1,4 @@
-<?
+<?php
     include_once('./rankingdak_header.php');
 
     $sql = "SELECT * FROM rankingdak_notice_table ORDER BY wType DESC, wDate DESC, idx DESC";

@@ -1,4 +1,4 @@
-<?
+<?php
     include_once('./rankingdak_header.php');
 
     $sql = "SELECT * FROM rankingdak_user_table ORDER BY userName ASC";

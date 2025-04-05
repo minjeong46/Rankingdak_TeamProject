@@ -1,6 +1,6 @@
-<?
+<?php
 
-include_once('./rankingdak_header.php');
+    include_once('./rankingdak_header.php');
 
 
     $SQL = "CREATE TABLE rankingdak_user_delete_form (
