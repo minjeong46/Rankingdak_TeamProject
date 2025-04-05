@@ -566,7 +566,7 @@ export default function SubAdminSignupComponent () {
         formData.append('adminAgreement', state.이용약관동의);
 
         axios({
-            url:'https://rankingdark.store/rankingdak/rankingdak_admin_insert.php',
+            url:'https://rankingdark.store/rankingdak_admin_insert.php',
             method:'POST',
             data: formData 
         })
