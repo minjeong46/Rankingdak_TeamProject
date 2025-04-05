@@ -224,7 +224,7 @@ export default function SubUserSignupComponent () {
                 
                     console.log('res.data:', res.data);
                     console.log('타입:', typeof res.data);
-                    if (Number(res.data) === 0) {
+                    if (res.data === 0) {
                         console.log('모달 확인 직전');
                         confirmModalMethod('사용가능한 아이디입니다.');
                         console.log('모달 호출 완료');
@@ -234,7 +234,7 @@ export default function SubUserSignupComponent () {
                         idGuidText: '사용 가능한 아이디입니다.',
                         인증된아이디: state.아이디,
                         }));
-                    } else if (Number(res.data) === 1) {
+                    } else if (res.data === 1) {
                         confirmModalMethod('사용 불가능한 아이디입니다.');
                         console.log('사용불가능 아이디');
                         setState((prev) => ({
